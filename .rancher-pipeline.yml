@@ -3,7 +3,7 @@ stages:
   steps:
   - applyAppConfig:
       catalogTemplate: cattle-global-data:demo-nfsaas-deployment
-      version: 2020.5.0-DEV14
+      version: 1.88.0
       name: sde
       targetNamespace: sde
 notification:
