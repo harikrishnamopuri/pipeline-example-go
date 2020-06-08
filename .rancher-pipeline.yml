@@ -6,6 +6,13 @@ stages:
       version: 0.1.5
       name: bookinfo
       targetNamespace: bookinfo
+- name: test
+  steps:
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:mycharts-app1
+      version: 0.3.0
+      name: app
+      targetNamespace: p-przr9-pipeline
 notification:
   recipients:
   - recipient: hkrishna294@gmail.com
