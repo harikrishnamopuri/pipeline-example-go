@@ -2,14 +2,14 @@ stages:
 - name: Deploy app
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:demo-nfsaas-deployment
-      version: 1.88.0
-      name: sde
-      targetNamespace: sde
+      catalogTemplate: cattle-global-data:mycharts-bookinfo
+      version: 0.1.5
+      name: bookinfo
+      targetNamespace: bookinfo
 notification:
   recipients:
   - recipient: hkrishna294@gmail.com
-    notifier: c-48p6x:n-8rhhj
+    notifier: c-nlr78:n-c77rk
   condition:
   - Success
   - Changed
